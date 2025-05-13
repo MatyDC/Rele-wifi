@@ -2106,147 +2106,6 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:L7805"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L7805"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.635 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L7805_0_1"
-				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "L7805_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Regulator_Linear:LM7805_TO220"
 			(pin_names
 				(offset 0.254)
@@ -2718,6 +2577,177 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_DPST_x2"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DPST_x2"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DPST_x2_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DPST_x2_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_DPST_x2_2_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -2936,116 +2966,110 @@
 		)
 	)
 	(junction
-		(at 74.93 30.48)
+		(at 92.202 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1535f902-e721-45d2-a215-2a05371a7c3b")
+	)
+	(junction
+		(at 245.364 94.996)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e0db75d-b29e-4e5b-8d59-7e0fb9115e32")
+	)
+	(junction
+		(at 91.948 28.702)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3023b499-1592-42ef-9c40-3c4f1f97c4cf")
 	)
 	(junction
-		(at 116.84 30.48)
+		(at 245.364 44.196)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "319da503-185d-4aa2-8599-9136fcf4a080")
+		(uuid "566105f0-6b47-422a-b270-5cfbb40d2d27")
 	)
 	(junction
-		(at 205.74 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f3714df-6d77-4925-9b04-92e34fb09e27")
-	)
-	(junction
-		(at 154.94 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40ca83bf-4e0c-4524-af78-22429ee2f97f")
-	)
-	(junction
-		(at 73.66 133.35)
+		(at 74.676 138.938)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c130892-a72e-4123-885a-8178808d1f19")
 	)
 	(junction
-		(at 252.73 45.72)
+		(at 236.474 79.756)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9947ad7c-5289-45fb-ba3c-4d75e200d59a")
+		(uuid "9f99f9fe-0eb9-4ed9-9869-2b33f192555a")
 	)
 	(junction
-		(at 27.94 82.55)
+		(at 245.364 79.756)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a216740b-5709-449c-a547-8ae44697eac7")
+		(uuid "a37c4433-44e0-47c8-abe5-537d7260cb7f")
 	)
 	(junction
-		(at 163.83 30.48)
+		(at 92.202 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a5afc273-2c9c-4e08-a2fd-14a3c2af529a")
+		(uuid "a386a652-ee2f-4d40-8be5-77a070eb1f27")
 	)
 	(junction
-		(at 74.93 82.55)
+		(at 49.276 138.938)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bbc46e7e-ef9b-4fa8-9915-c03db86c3e14")
+		(uuid "a5c7f3aa-d7b2-4bca-ba4e-85b252f3d02f")
 	)
 	(junction
-		(at 48.26 133.35)
+		(at 83.312 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5324ebe-f56c-40bd-b3d8-b7c5e63dd00e")
+		(uuid "b31f279c-84e3-413d-9918-72a7bf18f1b0")
 	)
 	(junction
-		(at 74.93 45.72)
+		(at 91.948 43.942)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6ed3126-f6f3-41eb-99af-fc8fbfcf8f24")
 	)
 	(junction
-		(at 163.83 45.72)
+		(at 236.474 28.956)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cbbbc536-5b70-46c8-8751-16c65a56a812")
+		(uuid "c8c9beec-575d-4f42-a69a-9430413c3dd6")
 	)
 	(junction
-		(at 66.04 30.48)
+		(at 83.058 28.702)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbfdba3d-d980-4a36-862f-16e13c9ba10d")
 	)
 	(junction
-		(at 252.73 30.48)
+		(at 245.364 28.956)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cd10d4ec-3265-40c1-8791-8011de901ba8")
+		(uuid "df8adbb1-25f7-41a9-8220-4a04ef025fbb")
 	)
-	(junction
-		(at 66.04 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d12f1fab-0952-4502-8f28-2c21bd1486ba")
+	(no_connect
+		(at 122.936 154.178)
+		(uuid "5c4bbd10-e2b5-44cd-9a63-6cbf0f4d4d52")
 	)
-	(junction
-		(at 74.93 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9d8937d-2495-4144-85d6-38c055f440b4")
-	)
-	(junction
-		(at 243.84 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df6b3bcb-5069-47e4-b2aa-730f57d928f2")
-	)
-	(junction
-		(at 27.94 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f16edce0-2274-4526-89bb-c88a19ccf7e3")
+	(no_connect
+		(at 122.936 149.098)
+		(uuid "a50aec22-4f1a-4d2a-a99c-d12a2fc6c093")
 	)
 	(wire
 		(pts
-			(xy 62.23 50.8) (xy 67.31 50.8)
+			(xy 92.202 95.25) (xy 92.202 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02572c3d-15b0-4394-bddd-0f1ca3f124c2")
+	)
+	(wire
+		(pts
+			(xy 79.248 49.022) (xy 84.328 49.022)
 		)
 		(stroke
 			(width 0)
@@ -3055,17 +3079,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 133.35) (xy 48.26 133.35)
+			(xy 252.984 28.956) (xy 245.364 28.956)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0542877a-ddc5-48e3-affe-7a3fea6787c0")
+		(uuid "033d99a4-8091-481d-ae89-30e5ca4d2bcd")
 	)
 	(wire
 		(pts
-			(xy 48.26 133.35) (xy 53.34 133.35)
+			(xy 49.276 138.938) (xy 54.356 138.938)
 		)
 		(stroke
 			(width 0)
@@ -3075,67 +3099,77 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 97.79) (xy 74.93 93.98)
+			(xy 34.036 138.938) (xy 36.576 138.938)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0acae035-63ed-45f8-a61c-e3ad7cbc3a50")
+		(uuid "11b570ec-356f-4dfd-ad1e-058edfa043d3")
 	)
 	(wire
 		(pts
-			(xy 26.67 82.55) (xy 27.94 82.55)
+			(xy 236.474 79.756) (xy 245.364 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0d1b28ee-b94e-4a82-81f1-4e3506606285")
+		(uuid "1d2d7b57-1fea-42eb-aabf-1ff4045e7b82")
 	)
 	(wire
 		(pts
-			(xy 40.64 135.89) (xy 39.37 135.89)
+			(xy 187.706 28.956) (xy 188.722 28.956)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0eced394-b72d-42d8-b717-7012a3bf9654")
+		(uuid "1ed3afce-9597-4612-95db-8bbbda57906c")
 	)
 	(wire
 		(pts
-			(xy 171.45 30.48) (xy 163.83 30.48)
+			(xy 34.544 141.478) (xy 34.036 141.478)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "12303805-56ee-4cf4-a516-b20df528caef")
+		(uuid "1f792219-3fd3-481f-abed-83db38a28295")
 	)
 	(wire
 		(pts
-			(xy 115.57 30.48) (xy 116.84 30.48)
+			(xy 42.926 28.702) (xy 44.45 28.702)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "179c2edc-f453-4f8c-a7ac-2c1bd06c01b5")
+		(uuid "204dd85b-6995-4201-b231-9dc68265df53")
 	)
 	(wire
 		(pts
-			(xy 252.73 45.72) (xy 252.73 41.91)
+			(xy 34.544 143.002) (xy 34.544 141.478)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fa2d50e-638d-4c29-a64d-5eb4b237ff28")
+		(uuid "20996612-0ec0-48ca-ae60-973e11c5fe08")
 	)
 	(wire
 		(pts
-			(xy 68.58 133.35) (xy 73.66 133.35)
+			(xy 236.474 28.956) (xy 245.364 28.956)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "262cbfc9-8386-4c49-8973-6203dbf705af")
+	)
+	(wire
+		(pts
+			(xy 69.596 138.938) (xy 74.676 138.938)
 		)
 		(stroke
 			(width 0)
@@ -3145,37 +3179,27 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 30.48) (xy 205.74 30.48)
+			(xy 245.364 94.996) (xy 245.364 91.186)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42146a6a-f810-4e27-92a8-b384d9fb896a")
+		(uuid "2f0b54f4-ef9f-4ae0-b628-921bc5c1f48a")
 	)
 	(wire
 		(pts
-			(xy 240.03 30.48) (xy 243.84 30.48)
+			(xy 196.342 79.756) (xy 197.866 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "436b120b-c1da-44a1-bfad-920f77e8ff0b")
+		(uuid "3bde8934-ba96-461c-8e45-ca565cb97453")
 	)
 	(wire
 		(pts
-			(xy 252.73 30.48) (xy 252.73 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43c21f6c-56eb-4c92-86a6-7023be2c16a2")
-	)
-	(wire
-		(pts
-			(xy 66.04 27.94) (xy 66.04 30.48)
+			(xy 83.058 26.162) (xy 83.058 28.702)
 		)
 		(stroke
 			(width 0)
@@ -3185,87 +3209,57 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 80.01) (xy 66.04 82.55)
+			(xy 232.664 79.756) (xy 236.474 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d9d220e-fc6d-4e81-96bd-4ff02ba9f54c")
+		(uuid "55d04d5d-b851-4253-8743-4d9033ff8228")
 	)
 	(wire
 		(pts
-			(xy 151.13 30.48) (xy 154.94 30.48)
+			(xy 187.706 79.756) (xy 188.722 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53a2b176-5737-43aa-a38f-78e26c06372f")
+		(uuid "56a3d5d7-fe2c-4847-8766-e2f9318c23c9")
 	)
 	(wire
 		(pts
-			(xy 163.83 30.48) (xy 163.83 34.29)
+			(xy 52.324 80.01) (xy 54.102 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "584ef9ce-0768-4ffc-a153-1d5294425a74")
+		(uuid "6d859ccb-629a-47b1-bcb1-57b6cc2a9c0d")
 	)
 	(wire
 		(pts
-			(xy 74.93 82.55) (xy 74.93 86.36)
+			(xy 79.502 97.79) (xy 79.502 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c4846b2-4522-456a-8275-ebfe268a51ee")
+		(uuid "79e9be3a-021b-4aa5-8c81-fa04bc74ab45")
 	)
 	(wire
 		(pts
-			(xy 171.45 45.72) (xy 163.83 45.72)
+			(xy 196.342 28.956) (xy 197.866 28.956)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5fd3ff40-f84f-473d-8def-9fc541332da3")
+		(uuid "85ab49f9-c539-45d1-9c11-1af488b56336")
 	)
 	(wire
 		(pts
-			(xy 205.74 30.48) (xy 207.01 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6960d31d-4168-4257-b6f9-70a5c446035b")
-	)
-	(wire
-		(pts
-			(xy 116.84 30.48) (xy 118.11 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b1e6721-d6c3-4bb6-a487-4a6449a57432")
-	)
-	(wire
-		(pts
-			(xy 82.55 97.79) (xy 74.93 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "876084fe-c4fd-4482-a73f-b7d48a3038de")
-	)
-	(wire
-		(pts
-			(xy 73.66 133.35) (xy 91.44 133.35)
+			(xy 74.676 138.938) (xy 92.456 138.938)
 		)
 		(stroke
 			(width 0)
@@ -3275,7 +3269,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 30.48) (xy 74.93 30.48)
+			(xy 99.568 28.702) (xy 91.948 28.702)
 		)
 		(stroke
 			(width 0)
@@ -3285,17 +3279,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 82.55) (xy 74.93 82.55)
+			(xy 236.474 77.216) (xy 236.474 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8a02bd44-520a-4415-9ea3-58502d099aca")
+		(uuid "891db38d-78b2-4007-8056-3a8513de6603")
 	)
 	(wire
 		(pts
-			(xy 74.93 30.48) (xy 74.93 34.29)
+			(xy 91.948 28.702) (xy 91.948 32.512)
 		)
 		(stroke
 			(width 0)
@@ -3305,17 +3299,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 30.48) (xy 27.94 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8eb21b21-4e21-4768-88b8-1c9779f3c793")
-	)
-	(wire
-		(pts
-			(xy 66.04 30.48) (xy 74.93 30.48)
+			(xy 83.058 28.702) (xy 91.948 28.702)
 		)
 		(stroke
 			(width 0)
@@ -3325,37 +3309,97 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 27.94) (xy 243.84 30.48)
+			(xy 92.202 80.01) (xy 92.202 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9fe1e953-99aa-4a69-a4e7-64c141ea4d09")
+		(uuid "9dd34831-d146-4629-9323-35c512b4e5a2")
 	)
 	(wire
 		(pts
-			(xy 151.13 48.26) (xy 151.13 50.8)
+			(xy 252.984 79.756) (xy 245.364 79.756)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac06f549-caec-4a7e-8e7f-8e9d0e13bc2d")
+		(uuid "9f804310-4288-4b6e-9e86-97b32627cef6")
 	)
 	(wire
 		(pts
-			(xy 66.04 82.55) (xy 74.93 82.55)
+			(xy 99.822 95.25) (xy 92.202 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b0b556c0-11d3-4b92-9937-90bfe6af14a8")
+		(uuid "a79ad506-5127-4a95-a1cb-b38253800751")
 	)
 	(wire
 		(pts
-			(xy 62.23 30.48) (xy 66.04 30.48)
+			(xy 245.364 79.756) (xy 245.364 83.566)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae08ce16-ecd5-402d-a1b3-c7ead35fc50c")
+	)
+	(wire
+		(pts
+			(xy 232.664 28.956) (xy 236.474 28.956)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea3ae5a-9626-4451-b439-bb4812a2057e")
+	)
+	(wire
+		(pts
+			(xy 52.07 28.702) (xy 53.848 28.702)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05434f5-d648-4213-bde5-9ecf70498d16")
+	)
+	(wire
+		(pts
+			(xy 232.664 46.736) (xy 232.664 49.276)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0acc0e0-e423-48ba-ac10-b9fbf98d6b12")
+	)
+	(wire
+		(pts
+			(xy 83.312 80.01) (xy 92.202 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74d7c77-7b16-429e-9d34-4b56241763d6")
+	)
+	(wire
+		(pts
+			(xy 99.822 80.01) (xy 92.202 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e73fc2-2602-4325-9750-60a3de101952")
+	)
+	(wire
+		(pts
+			(xy 79.248 28.702) (xy 83.058 28.702)
 		)
 		(stroke
 			(width 0)
@@ -3365,27 +3409,27 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 45.72) (xy 163.83 41.91)
+			(xy 205.486 28.956) (xy 207.264 28.956)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bc3cb9f9-8bd1-4169-85ea-48c1003af384")
+		(uuid "bab985f1-f386-4992-bc47-2063187d04c0")
 	)
 	(wire
 		(pts
-			(xy 260.35 45.72) (xy 252.73 45.72)
+			(xy 46.736 138.938) (xy 49.276 138.938)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "beed370c-db7d-4d25-b3c2-d211eec7746b")
+		(uuid "bb8bdfa6-ea4c-4989-9940-38efe0c31760")
 	)
 	(wire
 		(pts
-			(xy 82.55 45.72) (xy 74.93 45.72)
+			(xy 99.568 43.942) (xy 91.948 43.942)
 		)
 		(stroke
 			(width 0)
@@ -3395,67 +3439,77 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 30.48) (xy 163.83 30.48)
+			(xy 252.984 44.196) (xy 245.364 44.196)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4f2f094-a094-48d9-91a6-e9c4bd9be3a3")
+		(uuid "c825d09b-c52a-48e0-b4dd-739a946ad37c")
 	)
 	(wire
 		(pts
-			(xy 62.23 102.87) (xy 67.31 102.87)
+			(xy 245.364 28.956) (xy 245.364 32.766)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c6e609c4-b899-433d-b6be-e5aa92996561")
+		(uuid "cb25c2f2-060b-47c6-965a-1c547750fb53")
 	)
 	(wire
 		(pts
-			(xy 151.13 50.8) (xy 156.21 50.8)
+			(xy 236.474 26.416) (xy 236.474 28.956)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c96266db-dc48-4c1d-8b88-8d8372b33a59")
+		(uuid "ccaade3b-4fa7-4f71-a91a-d0eaf2282592")
 	)
 	(wire
 		(pts
-			(xy 260.35 30.48) (xy 252.73 30.48)
+			(xy 232.664 49.276) (xy 237.744 49.276)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc217e23-ff1a-4528-9fe6-4c5fb789e732")
+		(uuid "cf3023e0-9acc-41e8-a643-583a41e5ab5b")
 	)
 	(wire
 		(pts
-			(xy 27.94 82.55) (xy 29.21 82.55)
+			(xy 34.29 28.702) (xy 35.306 28.702)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ce6fce02-6054-4098-a421-4779e4f6f2f2")
+		(uuid "cfe2038c-2da7-4fc2-a328-d069742c2d38")
 	)
 	(wire
 		(pts
-			(xy 240.03 50.8) (xy 240.03 48.26)
+			(xy 79.502 80.01) (xy 83.312 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7ee05b6-da7b-4528-a35d-0002b8d9abd1")
+		(uuid "d90826bc-15ab-41d5-b7c8-a21847c996b4")
 	)
 	(wire
 		(pts
-			(xy 62.23 48.26) (xy 62.23 50.8)
+			(xy 43.18 80.01) (xy 44.704 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92e14e1-38ca-4cdb-9e79-26dd8c1c0be0")
+	)
+	(wire
+		(pts
+			(xy 79.248 46.482) (xy 79.248 49.022)
 		)
 		(stroke
 			(width 0)
@@ -3465,27 +3519,47 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 27.94) (xy 154.94 30.48)
+			(xy 232.664 97.536) (xy 232.664 100.076)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e01a34b2-b9b5-4d85-a73b-6f7033308333")
+		(uuid "de9fdf5e-52e3-4925-8674-e4a8e17004b9")
 	)
 	(wire
 		(pts
-			(xy 245.11 50.8) (xy 240.03 50.8)
+			(xy 83.312 77.47) (xy 83.312 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e426947a-afcd-49f9-944b-b688e51d1d6d")
+		(uuid "dea69050-da1e-4c5b-b99c-a2c1b27c2e1d")
 	)
 	(wire
 		(pts
-			(xy 74.93 45.72) (xy 74.93 41.91)
+			(xy 205.486 79.756) (xy 207.264 79.756)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30311f5-88e3-43fa-80a5-5e55a31bb66c")
+	)
+	(wire
+		(pts
+			(xy 122.936 156.718) (xy 123.698 156.718)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e39c4444-8ed5-41eb-821e-c0be1f025f60")
+	)
+	(wire
+		(pts
+			(xy 91.948 43.942) (xy 91.948 40.132)
 		)
 		(stroke
 			(width 0)
@@ -3495,47 +3569,79 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 30.48) (xy 29.21 30.48)
+			(xy 252.984 94.996) (xy 245.364 94.996)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9c2335b-451a-413d-9373-90fff899b0d8")
+		(uuid "ebd90ca4-f68a-40a3-bd6d-b97f0a0d370f")
 	)
 	(wire
 		(pts
-			(xy 243.84 30.48) (xy 252.73 30.48)
+			(xy 79.502 100.33) (xy 84.582 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed899049-f4af-44a0-81f8-9f47bde03096")
+		(uuid "ecd1bb97-e118-42bd-94f6-a9dcad3d99d6")
 	)
 	(wire
 		(pts
-			(xy 62.23 82.55) (xy 66.04 82.55)
+			(xy 34.544 80.01) (xy 35.56 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f46f0883-4675-42db-98e8-3907739e3052")
+		(uuid "f7a7ae3b-08ab-4c69-96b7-8f12f166faac")
 	)
 	(wire
 		(pts
-			(xy 62.23 100.33) (xy 62.23 102.87)
+			(xy 232.664 100.076) (xy 237.744 100.076)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "faeb0e2b-cd29-4608-9664-d655cde30b81")
+		(uuid "f7c70590-d9b4-4a1e-9241-8a1d63f90620")
+	)
+	(wire
+		(pts
+			(xy 245.364 44.196) (xy 245.364 40.386)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f94bbbaf-b1cf-4ac6-b1ae-416dac5c9134")
+	)
+	(wire
+		(pts
+			(xy 123.698 156.718) (xy 123.698 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc4da35c-69f5-4dc7-a925-080262a72b1a")
 	)
 	(rectangle
-		(start 15.875 16.51)
-		(end 102.616 61.722)
+		(start 22.86 121.666)
+		(end 132.334 167.132)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 0b6a812b-140c-45c0-b3da-30ccb7ffc96e)
+	)
+	(rectangle
+		(start 22.86 14.986)
+		(end 120.904 60.198)
 		(stroke
 			(width 0)
 			(type default)
@@ -3546,8 +3652,8 @@
 		(uuid 27162627-d14b-49ab-a9bc-c49479f97ef8)
 	)
 	(rectangle
-		(start 15.875 68.58)
-		(end 102.616 113.792)
+		(start 23.114 66.294)
+		(end 121.158 111.506)
 		(stroke
 			(width 0)
 			(type default)
@@ -3555,11 +3661,11 @@
 		(fill
 			(type none)
 		)
-		(uuid 410ce4e6-bb1d-488a-9be6-8065e648d4f3)
+		(uuid 46469058-80e0-4dd9-b4cf-6f536d33e782)
 	)
 	(rectangle
-		(start 104.775 16.51)
-		(end 191.516 61.722)
+		(start 176.276 15.24)
+		(end 274.32 60.452)
 		(stroke
 			(width 0)
 			(type default)
@@ -3567,11 +3673,11 @@
 		(fill
 			(type none)
 		)
-		(uuid 8cafed7d-e37b-492a-b994-e0943defb6af)
+		(uuid 9a807088-4dd2-4ce6-8f2d-46a432343680)
 	)
 	(rectangle
-		(start 193.675 16.51)
-		(end 280.416 61.722)
+		(start 176.276 66.04)
+		(end 274.32 111.252)
 		(stroke
 			(width 0)
 			(type default)
@@ -3579,33 +3685,33 @@
 		(fill
 			(type none)
 		)
-		(uuid b2cfdaed-c3ab-4a90-8ab8-bfa62efc445f)
+		(uuid bea7bf06-242d-4cb0-8a45-90e5d6b63596)
 	)
-	(text "Relay 3"
+	(text "Alimentación y ESP32 Cam"
 		(exclude_from_sim no)
-		(at 202.692 20.574 0)
+		(at 54.356 126.492 0)
 		(effects
 			(font
 				(face "Calibri")
 				(size 4 4)
 			)
 		)
-		(uuid "0c69a300-6042-465d-ae1a-2f7726abca73")
+		(uuid "85a1fbc9-aefc-43e6-b3b7-2d168d681b48")
 	)
-	(text "Relay 2"
+	(text "Relay 4"
 		(exclude_from_sim no)
-		(at 114.046 20.828 0)
+		(at 187.96 70.358 0)
 		(effects
 			(font
 				(face "Calibri")
 				(size 4 4)
 			)
 		)
-		(uuid "8daabe92-c81d-4a49-ad26-d755bff5400e")
+		(uuid "9517add2-5878-4176-93c5-350ea7f7f9aa")
 	)
 	(text "Relay 1"
 		(exclude_from_sim no)
-		(at 25.146 20.828 0)
+		(at 34.544 19.304 0)
 		(effects
 			(font
 				(face "Calibri")
@@ -3614,20 +3720,53 @@
 		)
 		(uuid "a4596e7d-436a-4e74-8bcb-3c1efb336deb")
 	)
-	(text "Relay 4"
+	(text "Relay 2"
 		(exclude_from_sim no)
-		(at 24.892 73.152 0)
+		(at 187.96 19.558 0)
 		(effects
 			(font
 				(face "Calibri")
 				(size 4 4)
 			)
 		)
-		(uuid "e2194771-16f0-4ca2-8947-bd61b5b5e254")
+		(uuid "d417f64d-2447-432d-b5e7-cb4a17e5afb7")
+	)
+	(text "Relay 3"
+		(exclude_from_sim no)
+		(at 34.798 70.612 0)
+		(effects
+			(font
+				(face "Calibri")
+				(size 4 4)
+			)
+		)
+		(uuid "ec617805-ed0e-4ecf-8131-46bf991944f0")
+	)
+	(global_label "14"
+		(shape input)
+		(at 265.684 79.756 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "02a67e7d-c36f-494f-947f-9a86ebea422c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.684 74.3518 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "12"
 		(shape input)
-		(at 49.53 55.88 0)
+		(at 66.548 54.102 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3637,7 +3776,7 @@
 		)
 		(uuid "08b30dbd-73ff-4b6e-a70d-31c5da65c849")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 55.88 0)
+			(at 71.9522 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3649,73 +3788,7 @@
 	)
 	(global_label "11"
 		(shape input)
-		(at 270.51 45.72 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1228dea5-460e-41d7-9ca4-a0de564a25d0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.51 51.1242 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO 14"
-		(shape input)
-		(at 26.67 82.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "210574f2-fb4d-45ef-a82f-36ac90b126e5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.8229 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO 13"
-		(shape input)
-		(at 115.57 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "26bcbb8a-5297-4712-aefe-c3d5f383651f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.7229 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "11"
-		(shape input)
-		(at 49.53 105.41 0)
+		(at 219.964 102.616 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3723,9 +3796,97 @@
 			)
 			(justify left)
 		)
-		(uuid "2f697cd2-4160-4216-8bb5-9b10180f7300")
+		(uuid "151c495c-8842-4800-b12a-a8fe4d661edb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 105.41 0)
+			(at 225.3682 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "14"
+		(shape input)
+		(at 219.964 49.276 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1766edc3-d484-4144-85c0-415d3d3750c7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.3682 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "14"
+		(shape input)
+		(at 112.522 80.01 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2179f99e-456a-4438-b727-ea77476c7b5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 112.522 74.6058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12"
+		(shape input)
+		(at 219.964 105.156 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "240a35cf-d40c-40ae-a5f7-9e34d2ec7127")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.3682 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "14"
+		(shape input)
+		(at 265.684 28.956 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b00fe9d-5ac0-48d8-883e-76da3c2417c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.684 23.5518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3737,7 +3898,51 @@
 	)
 	(global_label "11"
 		(shape input)
-		(at 92.71 45.72 270)
+		(at 109.982 95.25 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38e1153c-b55d-4039-841b-5f90588ee7a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.982 100.6542 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPIO 12"
+		(shape input)
+		(at 187.706 79.756 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3cd7643a-be71-4866-b72b-b5f581d9ed39")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.8589 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "11"
+		(shape input)
+		(at 109.728 43.942 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3747,7 +3952,7 @@
 		)
 		(uuid "43623e3d-9e81-4078-895f-fa43275c9a18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 51.1242 90)
+			(at 109.728 49.3462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,31 +3962,31 @@
 			)
 		)
 	)
-	(global_label "11"
+	(global_label "12"
 		(shape input)
-		(at 181.61 45.72 270)
+		(at 260.604 28.956 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "4d9bde1f-cc55-4593-ab0b-c6281523458c")
+		(uuid "445dda0c-e239-4201-a12f-8a93d555964d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.61 51.1242 90)
+			(at 260.604 23.5518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "GPIO 15"
 		(shape input)
-		(at 91.44 143.51 180)
+		(at 92.456 149.098 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3791,7 +3996,7 @@
 		)
 		(uuid "54574f1b-055b-4252-b04c-93b77303246b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.5929 143.51 0)
+			(at 81.6089 149.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3803,7 +4008,7 @@
 	)
 	(global_label "GPIO 13"
 		(shape input)
-		(at 91.44 140.97 180)
+		(at 92.456 146.558 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3813,7 +4018,7 @@
 		)
 		(uuid "56249bf3-cc13-4847-b931-ad493275c4e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.5929 140.97 0)
+			(at 81.6089 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3825,7 +4030,7 @@
 	)
 	(global_label "14"
 		(shape input)
-		(at 273.05 30.48 90)
+		(at 66.802 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3833,119 +4038,9 @@
 			)
 			(justify left)
 		)
-		(uuid "58e61f6a-0cf5-4873-b829-2f0ad6000370")
+		(uuid "663868d0-51a9-48fa-ad84-6620729375df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.05 25.0758 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "14"
-		(shape input)
-		(at 138.43 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "59b43001-0c71-4d8d-93ce-293fb69c39c0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.8342 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "11"
-		(shape input)
-		(at 138.43 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67d7f29e-4f2e-494c-b93d-07dacf928297")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.8342 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "14"
-		(shape input)
-		(at 95.25 82.55 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "70c40b2d-2ce4-4227-be71-6abcd0caeb8c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 77.1458 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO 15"
-		(shape input)
-		(at 204.47 30.48 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "71fbe131-13e4-42da-b539-83615b06cb2f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.6229 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "14"
-		(shape input)
-		(at 184.15 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "85f133a6-e54c-4289-8282-301edcfe44dd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 25.0758 90)
+			(at 72.2062 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3957,7 +4052,7 @@
 	)
 	(global_label "12"
 		(shape input)
-		(at 138.43 55.88 0)
+		(at 107.442 80.01 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3965,9 +4060,31 @@
 			)
 			(justify left)
 		)
-		(uuid "882323b3-0416-4ad5-985d-fc5af1a8164d")
+		(uuid "7b066ffd-3877-40e7-bcc7-e1d72864f916")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.8342 55.88 0)
+			(at 107.442 74.6058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12"
+		(shape input)
+		(at 66.802 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c32c889-27b4-498c-b450-5cd1e62b3f47")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.2062 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +4096,7 @@
 	)
 	(global_label "14"
 		(shape input)
-		(at 49.53 50.8 0)
+		(at 66.548 49.022 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3989,7 +4106,7 @@
 		)
 		(uuid "8e2e4093-d534-47fb-8f8c-e65a445ab476")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 50.8 0)
+			(at 71.9522 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4001,7 +4118,7 @@
 	)
 	(global_label "12"
 		(shape input)
-		(at 90.17 30.48 90)
+		(at 107.188 28.702 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4011,7 +4128,7 @@
 		)
 		(uuid "8ee83752-639a-4fe4-b9a7-9375b63d79f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 25.0758 90)
+			(at 107.188 23.2978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,9 +4138,9 @@
 			)
 		)
 	)
-	(global_label "12"
+	(global_label "14"
 		(shape input)
-		(at 179.07 30.48 90)
+		(at 219.964 100.076 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4031,9 +4148,9 @@
 			)
 			(justify left)
 		)
-		(uuid "93bf9aea-9ae4-4597-8f21-589939555d2f")
+		(uuid "929af09c-45c9-4de1-bd11-693272cabb0f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.07 25.0758 90)
+			(at 225.3682 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4043,9 +4160,31 @@
 			)
 		)
 	)
-	(global_label "12"
+	(global_label "11"
 		(shape input)
-		(at 49.53 107.95 0)
+		(at 263.144 94.996 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "949883d2-8875-4ddf-9372-554ab47b8968")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 263.144 100.4002 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "11"
+		(shape input)
+		(at 219.964 51.816 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4053,9 +4192,9 @@
 			)
 			(justify left)
 		)
-		(uuid "959c1ab3-4ad7-4a3e-a62b-61e4bbbbbb08")
+		(uuid "9f93949e-1421-4bd7-aeae-1bad9b0c310d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 107.95 0)
+			(at 225.3682 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4065,31 +4204,31 @@
 			)
 		)
 	)
-	(global_label "12"
+	(global_label "11"
 		(shape input)
-		(at 90.17 82.55 90)
+		(at 263.144 44.196 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "bd4c6318-fd6a-486d-9d7a-51cba9b20321")
+		(uuid "bddaaf64-4e5f-4dbf-ab4e-23f28704e099")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 77.1458 90)
+			(at 263.144 49.6002 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "GPIO 14"
 		(shape input)
-		(at 91.44 146.05 180)
+		(at 92.456 151.638 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4099,7 +4238,29 @@
 		)
 		(uuid "c7db505c-d009-4cb0-b7e4-79c435cecece")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.5929 146.05 0)
+			(at 81.6089 151.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPIO 12"
+		(shape input)
+		(at 187.706 28.956 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cbe49fae-740a-47ee-bd73-d05c99335f6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.8589 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4111,7 +4272,7 @@
 	)
 	(global_label "12"
 		(shape input)
-		(at 227.33 55.88 0)
+		(at 260.604 79.756 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4119,31 +4280,9 @@
 			)
 			(justify left)
 		)
-		(uuid "d02d3282-6b0e-4a4b-8707-f09cbd08650d")
+		(uuid "d29634de-2956-4772-962d-665c99805d57")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.7342 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "14"
-		(shape input)
-		(at 49.53 102.87 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1d7014c-4f41-4da8-8d40-13fec4345ce9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 102.87 0)
+			(at 260.604 74.3518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4155,7 +4294,7 @@
 	)
 	(global_label "GPIO 12"
 		(shape input)
-		(at 91.44 138.43 180)
+		(at 92.456 144.018 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4165,7 +4304,7 @@
 		)
 		(uuid "d63c1ee3-6bfd-47f8-bdc7-260f7ae46c68")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.5929 138.43 0)
+			(at 81.6089 144.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4177,7 +4316,7 @@
 	)
 	(global_label "GPIO 12"
 		(shape input)
-		(at 26.67 30.48 180)
+		(at 34.29 28.702 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4187,7 +4326,7 @@
 		)
 		(uuid "e0849597-5b12-49fc-bb71-122c7d0c1944")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.8229 30.48 0)
+			(at 23.4429 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,7 +4338,7 @@
 	)
 	(global_label "11"
 		(shape input)
-		(at 49.53 53.34 0)
+		(at 66.548 51.562 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4209,7 +4348,7 @@
 		)
 		(uuid "e39ad0d4-f418-481a-8264-3f1f5a19b902")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.9342 53.34 0)
+			(at 71.9522 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4221,7 +4360,7 @@
 	)
 	(global_label "14"
 		(shape input)
-		(at 95.25 30.48 90)
+		(at 112.268 28.702 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4231,7 +4370,29 @@
 		)
 		(uuid "e6fc99f3-e646-4a75-a174-fb89aa852420")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 25.0758 90)
+			(at 112.268 23.2978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "11"
+		(shape input)
+		(at 66.802 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea2e8b03-8ad6-4365-ab86-d8be9e534f1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.2062 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4243,7 +4404,7 @@
 	)
 	(global_label "12"
 		(shape input)
-		(at 267.97 30.48 90)
+		(at 219.964 54.356 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4251,9 +4412,9 @@
 			)
 			(justify left)
 		)
-		(uuid "ebb34506-a4ad-4abb-bbdf-3bd13fab2427")
+		(uuid "f2a33d0f-2d42-4321-aabc-40389347e245")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 25.0758 90)
+			(at 225.3682 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4263,53 +4424,9 @@
 			)
 		)
 	)
-	(global_label "11"
+	(global_label "GPIO 12"
 		(shape input)
-		(at 227.33 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ee3ac8c0-80a4-4ace-be10-0814f6f909ca")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.7342 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "14"
-		(shape input)
-		(at 227.33 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f7410db5-f5b4-434b-b85c-6280f94f16b2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.7342 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "11"
-		(shape input)
-		(at 92.71 97.79 270)
+		(at 34.544 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4317,9 +4434,9 @@
 			)
 			(justify right)
 		)
-		(uuid "fd299041-7ae6-44fd-816e-eacdc25821ed")
+		(uuid "f5ff9796-8b0a-485a-9c91-ff7f9a1ba7f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 103.1942 90)
+			(at 23.6969 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +4448,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 33.02 30.48 90)
+		(at 39.116 28.702 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4339,7 +4456,7 @@
 		(dnp no)
 		(uuid "0603aaeb-123e-4314-9568-283f132c3ea9")
 		(property "Reference" "R1"
-			(at 33.02 28.448 90)
+			(at 39.116 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4347,7 +4464,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 32.766 30.48 90)
+			(at 38.862 28.702 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4355,7 +4472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 32.258 90)
+			(at 39.116 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4364,7 +4481,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 30.48 0)
+			(at 39.116 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,7 +4490,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 33.02 30.48 0)
+			(at 39.116 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,73 +4514,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 66.04 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0742cd3e-9982-45f7-b87f-e96f9ef3a863")
-		(property "Reference" "#PWR08"
-			(at 66.04 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 66.04 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "051dfe31-3f56-4e6f-afbd-249d4a9f6a8a")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
-		(at 74.93 38.1 270)
+		(at 91.948 36.322 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4471,7 +4523,7 @@
 		(dnp no)
 		(uuid "0b4daf10-a663-4252-b6ba-5cc02a4337c8")
 		(property "Reference" "D4"
-			(at 73.66 34.036 0)
+			(at 90.678 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4532,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 73.66 39.624 0)
+			(at 90.678 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4541,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 38.1 0)
+			(at 91.948 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4550,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 38.1 0)
+			(at 91.948 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +4559,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 74.93 38.1 0)
+			(at 91.948 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4568,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 74.93 38.1 0)
+			(at 91.948 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4577,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 38.1 0)
+			(at 91.948 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4549,8 +4601,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 79.502 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0efed387-d737-4ef1-badd-1927a545df5f")
+		(property "Reference" "10K2"
+			(at 79.502 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 77.216 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 79.502 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 79.502 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "958e9e5f-2e72-4550-a7f7-56b8b7836577")
+		)
+		(pin "2"
+			(uuid "a637cca7-7a16-493e-a2b5-b71014234fcd")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "10K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 40.64 135.89 0)
+		(at 34.544 143.002 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4559,7 +4678,7 @@
 		(fields_autoplaced yes)
 		(uuid "236a95cc-1949-429c-9543-d2fb11d089d0")
 		(property "Reference" "#PWR016"
-			(at 40.64 142.24 0)
+			(at 34.544 149.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4687,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 140.515 0)
+			(at 34.544 147.627 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 135.89 0)
+			(at 34.544 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 135.89 0)
+			(at 34.544 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +4713,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 135.89 0)
+			(at 34.544 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,7 +4735,7 @@
 	)
 	(symbol
 		(lib_id "EESTN5:BC547")
-		(at 72.39 50.8 0)
+		(at 89.408 49.022 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4625,7 +4744,7 @@
 		(fields_autoplaced yes)
 		(uuid "24167b3f-da9f-46d0-a2c6-f888a2644d2e")
 		(property "Reference" "Q1"
-			(at 77.47 49.5299 0)
+			(at 94.488 47.7519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,7 +4753,7 @@
 			)
 		)
 		(property "Value" "BC547"
-			(at 77.47 52.0699 0)
+			(at 94.488 50.2919 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4643,7 +4762,7 @@
 			)
 		)
 		(property "Footprint" "EESTN5:TO-92"
-			(at 77.47 52.705 0)
+			(at 94.488 50.927 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,7 +4773,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
-			(at 72.39 50.8 0)
+			(at 89.408 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +4783,7 @@
 			)
 		)
 		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
-			(at 72.39 50.8 0)
+			(at 89.408 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4691,8 +4810,194 @@
 		)
 	)
 	(symbol
+		(lib_id "PC817-B:PC817-B")
+		(at 66.802 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "24de9336-82af-4a36-bf63-5e667dd54329")
+		(property "Reference" "Q4"
+			(at 61.976 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PC817-B"
+			(at 73.406 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "American Bright"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "DIP-4 American Bright"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N/A"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PC817-B"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "SHARP"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "METADATA" "IPC-7351B"
+			(at 66.802 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "efeeea79-1281-4c1d-920b-dd46f6230b2b")
+		)
+		(pin "3"
+			(uuid "3479be7d-1914-462d-9cc1-e0aaeb219e24")
+		)
+		(pin "4"
+			(uuid "6a494a56-07e0-4b5b-9a5b-51048a4e1c5d")
+		)
+		(pin "2"
+			(uuid "2be6296a-0f94-4c3a-a63e-f2a92d90796d")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
-		(at 66.04 27.94 0)
+		(at 83.058 26.162 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4700,7 +5005,7 @@
 		(dnp no)
 		(uuid "259b4fc8-5541-4ba1-8471-63566f9a1827")
 		(property "Reference" "#PWR021"
-			(at 66.04 31.75 0)
+			(at 83.058 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +5014,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 66.04 24.13 0)
+			(at 83.058 22.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4717,7 +5022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 27.94 0)
+			(at 83.058 26.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4726,7 +5031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 27.94 0)
+			(at 83.058 26.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4735,7 +5040,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 66.04 27.94 0)
+			(at 83.058 26.162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4757,16 +5062,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 34.29 135.89 180)
+		(at 28.956 141.478 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2ac1bb1e-e873-416f-9a76-e2260e50c8e0")
 		(property "Reference" "J5"
-			(at 34.29 127 0)
+			(at 28.956 134.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +5078,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 34.29 129.54 0)
+			(at 33.782 136.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +5086,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 34.29 135.89 0)
+			(at 28.956 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4791,7 +5095,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 135.89 0)
+			(at 28.956 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,7 +5104,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 34.29 135.89 0)
+			(at 28.956 141.478 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4824,162 +5128,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_SPDT")
-		(at 176.53 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "32aaf9c2-2594-491e-8178-874a36939383")
-		(property "Reference" "K1"
-			(at 187.706 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Relay_SPDT"
-			(at 189.23 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay SPDT, EN50005"
-			(at 176.53 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "9398f63b-8687-4613-bd2a-23226302d7cd")
-		)
-		(pin "14"
-			(uuid "9eccf762-56ee-4225-bdab-50b65313af9d")
-		)
-		(pin "A2"
-			(uuid "f8105cbb-6a8b-40e3-aad0-a96ebe68aa81")
-		)
-		(pin "11"
-			(uuid "5771c91b-a2fd-4c86-9eff-6eb82f0badf8")
-		)
-		(pin "12"
-			(uuid "34831bfa-a67e-43b6-8f66-5bf7eec01acd")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "K1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 116.84 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "337b5456-60f9-4223-8310-f49ac952b8b3")
-		(property "Reference" "R3"
-			(at 113.03 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330"
-			(at 116.84 43.688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.062 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 116.84 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40bddf5e-7685-48d9-9465-173f9bc29b25")
-		)
-		(pin "2"
-			(uuid "37cfdc62-8163-467b-bdd0-c98b1ca8b3d1")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 74.93 107.95 0)
+		(at 207.264 89.916 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "34947b0e-e5d4-40ca-9da9-da6cb1da11d0")
-		(property "Reference" "#PWR09"
-			(at 74.93 114.3 0)
+		(uuid "2bf8c7fb-681f-44a5-bab9-6ecb47ca3bf0")
+		(property "Reference" "#PWR08"
+			(at 207.264 96.266 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4988,7 +5146,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.216 110.998 0)
+			(at 207.264 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +5154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 107.95 0)
+			(at 207.264 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,7 +5163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 107.95 0)
+			(at 207.264 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5014,7 +5172,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 107.95 0)
+			(at 207.264 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,36 +5181,114 @@
 			)
 		)
 		(pin "1"
-			(uuid "4baed1e0-30ec-4d5b-b3d0-e8e998bc1b15")
+			(uuid "45fdd3fd-e5ac-46e9-90fd-1373a51397c4")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR09")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 62.23 96.52 180)
+		(lib_id "Relay:Relay_SPDT")
+		(at 258.064 87.376 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "457bf781-bb05-46fb-bc4d-96546f5de8c9")
-		(property "Reference" "10K2"
-			(at 62.23 96.266 90)
+		(uuid "3cdf4b72-de65-451a-8da4-f693a51e3dbb")
+		(property "Reference" "K3"
+			(at 269.24 87.376 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 59.944 96.266 0)
+		(property "Value" "Relay_SPDT"
+			(at 270.764 87.376 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay:RELAY_PR13-5V-450-1C"
+			(at 269.494 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 258.064 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Monostable Relay SPDT, EN50005"
+			(at 258.064 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "6810e714-cdc4-469c-9cab-3b62c570dd70")
+		)
+		(pin "14"
+			(uuid "2d4c1e3f-3c70-4c71-8df8-47f79b8e3dbb")
+		)
+		(pin "A2"
+			(uuid "d54ee062-f970-40c0-9f82-6f10805047b5")
+		)
+		(pin "11"
+			(uuid "14e9ab5e-3a4a-41ca-8587-876ccdc40a10")
+		)
+		(pin "12"
+			(uuid "345e9cc3-9c34-486f-a649-cbdd6d151977")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "K3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 201.676 28.956 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4861a805-5073-4f2a-8e8e-49da53f382f8")
+		(property "Reference" "D2"
+			(at 203.2635 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 203.2635 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5060,7 +5296,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.008 96.52 90)
+			(at 201.676 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5069,7 +5305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 96.52 0)
+			(at 201.676 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5077,25 +5313,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 62.23 96.52 0)
+		(property "Description" "Light emitting diode"
+			(at 201.676 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "e32449bf-1c7a-4412-966a-128e009ab3e9")
 		)
 		(pin "2"
-			(uuid "cd026d46-4c1e-4fde-a5aa-971dad1e5a23")
+			(uuid "c0dc4158-ba01-4e49-818d-e0f7c61f5918")
+		)
+		(pin "1"
+			(uuid "a63e6b54-ca37-4443-b4c5-e8a22570ef5f")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "10K2")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5103,7 +5339,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 48.26 137.16 0)
+		(at 49.276 142.748 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5111,7 +5347,7 @@
 		(dnp no)
 		(uuid "499fc98c-fc56-4a45-a802-9b34100a1a2b")
 		(property "Reference" "C5"
-			(at 50.8 137.16 0)
+			(at 51.816 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5120,7 +5356,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 49.53 139.446 0)
+			(at 50.546 145.034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5129,7 +5365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.2252 140.97 0)
+			(at 50.2412 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5138,7 +5374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 137.16 0)
+			(at 49.276 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5147,7 +5383,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 48.26 137.16 0)
+			(at 49.276 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5171,25 +5407,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 154.94 27.94 0)
+		(lib_id "Device:R")
+		(at 192.532 79.756 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4a4ffde0-4c58-4a4e-9ff0-12059b517f30")
-		(property "Reference" "#PWR03"
-			(at 154.94 31.75 0)
+		(uuid "4def59a1-237a-495c-b9dc-3e9003d2b6f5")
+		(property "Reference" "R4"
+			(at 192.532 77.724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 154.94 23.876 0)
+		(property "Value" "220"
+			(at 192.278 79.756 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5197,71 +5432,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 154.94 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c487902d-1b03-4c1d-a458-df21dfd689e7")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 222.25 53.34 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5019fcea-445e-49e9-a868-463f59032a22")
-		(property "Reference" "J4"
-			(at 222.25 48.006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x03"
-			(at 222.504 58.928 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
-			(at 222.25 53.34 0)
+			(at 192.532 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5270,7 +5441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 53.34 0)
+			(at 192.532 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,8 +5449,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 222.25 53.34 0)
+		(property "Description" "Resistor"
+			(at 192.532 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5288,18 +5459,153 @@
 			)
 		)
 		(pin "1"
-			(uuid "68246819-569e-43e1-b7fb-825ff0794402")
-		)
-		(pin "3"
-			(uuid "8df067ab-5ddb-453f-becc-4ae7b1c8cb4c")
+			(uuid "ba195304-5df2-4d04-934f-fb08823a47f7")
 		)
 		(pin "2"
-			(uuid "d9c666cc-af08-42d7-89f9-43146e5e004a")
+			(uuid "ee987963-2fad-4260-953e-edb6c11826da")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "J4")
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 236.474 26.416 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f520af9-226b-4a57-b7d3-c46bb10063c9")
+		(property "Reference" "#PWR02"
+			(at 236.474 30.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 236.474 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.474 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.474 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 236.474 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1d2d13e-31eb-458c-ab2c-ed90012e788d")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 41.656 138.938 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5118dc4d-9fbe-4224-8afb-442b032cf263")
+		(property "Reference" "SW1"
+			(at 41.656 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 41.148 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.656 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.656 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(at 41.656 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5b825e1e-2ecd-49f7-bbd2-4fbe7cd0b937")
+		)
+		(pin "1"
+			(uuid "bb7944f6-4efa-44f7-9a77-ef95511ad492")
+		)
+		(pin "4"
+			(uuid "6a2d975d-9d6b-4894-b7ad-b15e3a3204a9")
+		)
+		(pin "3"
+			(uuid "d2aa267b-64a3-4219-bf01-0cc75aacde11")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -5307,7 +5613,7 @@
 	)
 	(symbol
 		(lib_id "PC817-B:PC817-B")
-		(at 49.53 35.56 0)
+		(at 66.548 33.782 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5315,7 +5621,7 @@
 		(dnp no)
 		(uuid "51cfd1f2-193c-47ec-99bd-dcc499c66868")
 		(property "Reference" "Q5"
-			(at 44.704 44.45 0)
+			(at 61.722 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5324,7 +5630,7 @@
 			)
 		)
 		(property "Value" "PC817-B"
-			(at 56.134 44.45 0)
+			(at 73.152 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5333,7 +5639,7 @@
 			)
 		)
 		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5343,7 +5649,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5352,7 +5658,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5667,7 @@
 			)
 		)
 		(property "MF" "American Bright"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5371,7 +5677,7 @@
 			)
 		)
 		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5381,7 +5687,7 @@
 			)
 		)
 		(property "Package" "DIP-4 American Bright"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5391,7 +5697,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5401,7 +5707,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5411,7 +5717,7 @@
 			)
 		)
 		(property "PARTREV" "N/A"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5727,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5431,7 +5737,7 @@
 			)
 		)
 		(property "MP" "PC817-B"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5441,7 +5747,7 @@
 			)
 		)
 		(property "MANUFACTURER" "SHARP"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +5757,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5461,7 +5767,7 @@
 			)
 		)
 		(property "METADATA" "IPC-7351B"
-			(at 49.53 35.56 0)
+			(at 66.548 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5493,72 +5799,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "559fc672-23bf-45d4-9220-7b507dd4392e")
-		(property "Reference" "#PWR01"
-			(at 116.84 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 50.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aae3dd22-b7dc-4a0a-a672-b9f6ade6d68f")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 140.97 0)
+		(at 61.976 146.558 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5567,7 +5808,7 @@
 		(fields_autoplaced yes)
 		(uuid "55eafe7c-f67b-494a-8b28-77a3ff9c07b4")
 		(property "Reference" "#PWR015"
-			(at 60.96 147.32 0)
+			(at 61.976 152.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5576,7 +5817,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 145.595 0)
+			(at 61.976 151.183 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5584,7 +5825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 140.97 0)
+			(at 61.976 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5593,7 +5834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 140.97 0)
+			(at 61.976 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5602,7 +5843,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 140.97 0)
+			(at 61.976 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5624,7 +5865,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 140.97 0)
+		(at 74.676 146.558 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5633,7 +5874,7 @@
 		(fields_autoplaced yes)
 		(uuid "5636052b-6e9c-4e08-8143-14c1b9505042")
 		(property "Reference" "#PWR018"
-			(at 73.66 147.32 0)
+			(at 74.676 152.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5642,7 +5883,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.66 145.595 0)
+			(at 74.676 151.183 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5650,7 +5891,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 140.97 0)
+			(at 74.676 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5659,7 +5900,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 140.97 0)
+			(at 74.676 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5668,7 +5909,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 140.97 0)
+			(at 74.676 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5689,44 +5930,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PC817-B:PC817-B")
-		(at 138.43 35.56 0)
+		(lib_id "power:VCC")
+		(at 83.312 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "58e2e05c-d812-473f-ae62-2875a0c869b1")
-		(property "Reference" "Q2"
-			(at 133.604 44.45 0)
+		(uuid "576c60a0-de6c-4822-befc-6830201504e5")
+		(property "Reference" "#PWR06"
+			(at 83.312 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-			)
-		)
-		(property "Value" "PC817-B"
-			(at 145.034 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 138.43 35.56 0)
+		(property "Value" "VCC"
+			(at 83.312 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.312 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5734,8 +5964,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 138.43 35.56 0)
+		(property "Datasheet" ""
+			(at 83.312 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5743,132 +5973,89 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "American Bright"
-			(at 138.43 35.56 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 83.312 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "DIP-4 American Bright"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "N/A"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "PC817-B"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "SHARP"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "METADATA" "IPC-7351B"
-			(at 138.43 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "70378de4-39b9-4fce-82e6-679bdf7c5dc4")
-		)
-		(pin "3"
-			(uuid "c66b8fca-7b9b-4a4f-802d-f1a3719c4377")
-		)
-		(pin "4"
-			(uuid "d1e0c919-7707-432b-8e84-c9c0152786f4")
-		)
-		(pin "2"
-			(uuid "9fd758c9-877e-4728-88fe-7d2fc6d7b64e")
+			(uuid "bcc09c16-01ab-4b9d-9327-34ab2f9f8f44")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q2")
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 232.664 42.926 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a9b987e-9437-467b-8359-997753d45172")
+		(property "Reference" "10K3"
+			(at 232.664 42.672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 230.378 42.672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.442 42.926 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.664 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.664 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d16aa560-b634-429e-a76b-c9d4661172e2")
+		)
+		(pin "2"
+			(uuid "5e3ea5de-e18c-4db2-bb61-6b785b77ebbb")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "10K3")
 					(unit 1)
 				)
 			)
@@ -5876,7 +6063,7 @@
 	)
 	(symbol
 		(lib_id "ESP32-CAM:ESP32-CAM")
-		(at 106.68 148.59 0)
+		(at 107.696 154.178 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5885,7 +6072,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d6bbb1c-c6ed-42ce-8546-92c4b5e6a30c")
 		(property "Reference" "U2"
-			(at 106.68 125.73 0)
+			(at 107.696 131.318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5893,7 +6080,7 @@
 			)
 		)
 		(property "Value" "ESP32-CAM"
-			(at 106.68 128.27 0)
+			(at 107.696 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5901,7 +6088,7 @@
 			)
 		)
 		(property "Footprint" "ESP32 cam:ESP32-CAM"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5911,7 +6098,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5920,7 +6107,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5929,7 +6116,7 @@
 			)
 		)
 		(property "MF" "AI-Thinker"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5939,7 +6126,7 @@
 			)
 		)
 		(property "DESCRIPTION" "ESP32 ESP32 Transceiver; 802.11 a/b/g/n (Wi-Fi, WiFi, WLAN), Bluetooth® Smart 4.x Low Energy (BLE) Evaluation Board"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,7 +6136,7 @@
 			)
 		)
 		(property "PACKAGE" "None"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5959,7 +6146,7 @@
 			)
 		)
 		(property "PRICE" "None"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5969,7 +6156,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5979,7 +6166,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=eda"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5989,7 +6176,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,7 +6186,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=snap"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6009,7 +6196,7 @@
 			)
 		)
 		(property "MP" "ESP32-CAM"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6019,7 +6206,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6029,7 +6216,7 @@
 			)
 		)
 		(property "AVAILABILITY" "Not in stock"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6039,7 +6226,7 @@
 			)
 		)
 		(property "Description_1" "\n                        \n                            ESP32 ESP32 Transceiver; 802.11 a/b/g/n (Wi-Fi, WiFi, WLAN), Bluetooth® Smart 4.x Low Energy (BLE) Evaluation Board\n                        \n"
-			(at 106.68 148.59 0)
+			(at 107.696 154.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6106,35 +6293,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 27.94 34.29 90)
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 61.722 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63c8e4c0-ee24-43d8-8b18-7eb6118514c4")
-		(property "Reference" "D1"
-			(at 30.988 34.6074 90)
+		(uuid "635a9d55-4c17-497e-a3d7-3360fdc935b2")
+		(property "Reference" "J3"
+			(at 61.722 97.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "LED"
-			(at 30.988 37.1474 90)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 61.976 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 27.94 34.29 0)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
+			(at 61.722 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6143,7 +6327,78 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 27.94 34.29 0)
+			(at 61.722 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 61.722 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92deb366-90ed-4145-9a50-815593ff836b")
+		)
+		(pin "3"
+			(uuid "af8fd2bc-ef3f-42f2-b53f-2de3b531205b")
+		)
+		(pin "2"
+			(uuid "1ef76b95-ac33-473d-b27b-fbfffcfd1345")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 48.26 28.702 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63c8e4c0-ee24-43d8-8b18-7eb6118514c4")
+		(property "Reference" "D1"
+			(at 49.8475 21.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 49.8475 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 28.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6152,7 +6407,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 27.94 34.29 0)
+			(at 48.26 28.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6177,15 +6432,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 74.93 90.17 270)
+		(at 92.202 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6727ddb8-6014-40c9-bb3b-354a2feac82a")
+		(uuid "665ab0aa-7bb6-49ac-8f99-76beb129d7db")
 		(property "Reference" "D6"
-			(at 73.66 86.106 0)
+			(at 90.932 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6194,7 +6449,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 73.66 91.694 0)
+			(at 90.932 89.154 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6203,7 +6458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 90.17 0)
+			(at 92.202 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6212,7 +6467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 90.17 0)
+			(at 92.202 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6221,7 +6476,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 74.93 90.17 0)
+			(at 92.202 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6230,7 +6485,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 74.93 90.17 0)
+			(at 92.202 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6239,7 +6494,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 74.93 90.17 0)
+			(at 92.202 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6248,10 +6503,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "cd86b44c-4fbe-4995-9c57-c0232c65cac4")
+			(uuid "b5ee52ec-5c1a-4b2f-b335-a8d87f13bc79")
 		)
 		(pin "1"
-			(uuid "f94b15c1-23aa-4484-aff5-970236700389")
+			(uuid "3d378db8-e30d-4295-bfe7-d79612e3dce6")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
@@ -6264,137 +6519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 252.73 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "698be3f6-731c-42af-92ad-d9378f141fb5")
-		(property "Reference" "#PWR013"
-			(at 252.73 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 255.016 58.928 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d306af54-de14-4e61-a7e6-f8b33b1aebf0")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 27.94 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6cc96074-607c-4ec5-9e27-dedb7ce925c3")
-		(property "Reference" "#PWR019"
-			(at 27.94 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 50.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38abe88e-3593-4269-a6f5-aa2625b8a326")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48.26 140.97 0)
+		(at 49.276 146.558 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6403,7 +6528,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f6ab1e5-0492-4617-951e-0f5891cf6e0c")
 		(property "Reference" "#PWR017"
-			(at 48.26 147.32 0)
+			(at 49.276 152.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6412,7 +6537,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 145.595 0)
+			(at 49.276 151.183 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6420,7 +6545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 140.97 0)
+			(at 49.276 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6429,7 +6554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 140.97 0)
+			(at 49.276 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6438,7 +6563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 48.26 140.97 0)
+			(at 49.276 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6459,142 +6584,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 214.63 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73cb6a8b-197b-4193-9c10-984f4f3bd61c")
-		(property "Reference" "#PWR011"
-			(at 214.63 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 214.63 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "125fdc57-78ee-409c-a982-59f3d2b9fdcb")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 27.94 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "746724bd-a618-409d-afaf-087587a3b1c1")
-		(property "Reference" "R2"
-			(at 24.13 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330"
-			(at 27.94 43.688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.162 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 27.94 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 27.94 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd01fcf1-eaf0-466c-99a2-75ec03aff066")
-		)
-		(pin "2"
-			(uuid "7ee0c5ad-e593-40cd-8299-c657e3b226c1")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 62.23 44.45 180)
+		(at 79.248 42.672 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6602,7 +6593,7 @@
 		(dnp no)
 		(uuid "7795ae27-2341-4c33-909d-af23f66084c6")
 		(property "Reference" "10K1"
-			(at 62.23 44.196 90)
+			(at 79.248 42.418 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6610,7 +6601,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 59.944 44.196 0)
+			(at 76.962 42.418 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6618,7 +6609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.008 44.45 90)
+			(at 81.026 42.672 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6627,7 +6618,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 44.45 0)
+			(at 79.248 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6636,7 +6627,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 62.23 44.45 0)
+			(at 79.248 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6660,73 +6651,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 243.84 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b468626-c77e-4edf-beb8-9fc4b297b716")
-		(property "Reference" "#PWR012"
-			(at 243.84 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 243.84 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 243.84 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0dd441c7-b3c8-4582-acf5-e83b0c27b3ba")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 44.45 53.34 180)
+		(at 61.468 51.562 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6734,7 +6660,7 @@
 		(dnp no)
 		(uuid "7f670887-af6f-48f5-8495-e457849ca14b")
 		(property "Reference" "J1"
-			(at 44.45 48.006 0)
+			(at 61.468 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +6668,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x03"
-			(at 44.704 58.928 0)
+			(at 61.722 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6750,7 +6676,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
-			(at 44.45 53.34 0)
+			(at 61.468 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6759,7 +6685,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 53.34 0)
+			(at 61.468 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6768,7 +6694,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 44.45 53.34 0)
+			(at 61.468 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6795,16 +6721,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 73.66 137.16 0)
+		(lib_id "Device:D")
+		(at 245.364 87.376 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "83f3053c-2392-4763-991a-a421eca445a6")
-		(property "Reference" "C6"
-			(at 76.2 137.16 0)
+		(uuid "8131695b-b524-40e0-b9a0-05202e39350d")
+		(property "Reference" "D8"
+			(at 244.094 83.312 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6812,8 +6738,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 74.422 139.446 0)
+		(property "Value" "D"
+			(at 244.094 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6822,7 +6748,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.6252 140.97 0)
+			(at 245.364 87.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6831,7 +6757,94 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 137.16 0)
+			(at 245.364 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 245.364 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 245.364 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 245.364 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "78d58166-a76f-44c4-a2c1-9c3c4cfa9517")
+		)
+		(pin "1"
+			(uuid "2e7eac8a-cea5-498a-84a6-7cddb579e720")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 74.676 142.748 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "83f3053c-2392-4763-991a-a421eca445a6")
+		(property "Reference" "C6"
+			(at 77.216 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 75.438 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 75.6412 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.676 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,7 +6853,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 137.16 0)
+			(at 74.676 142.748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6864,160 +6877,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EESTN5:BC547")
-		(at 250.19 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8be89729-0bcd-4386-8490-f654b5fef7f9")
-		(property "Reference" "Q8"
-			(at 255.27 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC547"
-			(at 255.27 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EESTN5:TO-92"
-			(at 255.27 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
-			(at 250.19 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
-			(at 250.19 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d05a7f2-ceb0-4fc1-ae2f-6ffbfbe04751")
-		)
-		(pin "3"
-			(uuid "a7a14084-fdbc-417f-b587-7c9bce31f7de")
-		)
-		(pin "2"
-			(uuid "9b61ed8d-abf8-46c4-a95e-5956ad253654")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EESTN5:BC547")
-		(at 161.29 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d01a456-90d7-45e2-8284-5863a45b5099")
-		(property "Reference" "Q3"
-			(at 166.37 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC547"
-			(at 166.37 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EESTN5:TO-92"
-			(at 166.37 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
-			(at 161.29 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
-			(at 161.29 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "708fa9b2-ccab-48c9-8656-79b991465d90")
-		)
-		(pin "3"
-			(uuid "402bd92a-50f9-4788-8c89-a3c02ab39d23")
-		)
-		(pin "2"
-			(uuid "e67e50f4-6054-4934-8eae-31ffdd40a102")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:LM7805_TO220")
-		(at 119.38 115.57 0)
+		(at 61.976 138.938 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7026,7 +6887,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e293aed-c0da-40c8-9725-5c189fe9e944")
 		(property "Reference" "U3"
-			(at 119.38 109.22 0)
+			(at 61.976 132.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7034,7 +6895,7 @@
 			)
 		)
 		(property "Value" "LM7805_TO220"
-			(at 119.38 111.76 0)
+			(at 61.976 135.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7042,7 +6903,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 119.38 109.855 0)
+			(at 61.976 133.223 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7052,7 +6913,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
-			(at 119.38 116.84 0)
+			(at 61.976 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7061,7 +6922,7 @@
 			)
 		)
 		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220"
-			(at 119.38 115.57 0)
+			(at 61.976 138.938 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7088,8 +6949,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 192.532 28.956 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e397fc1-e099-475c-a6f5-df7d886e6064")
+		(property "Reference" "R2"
+			(at 192.532 26.924 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 192.278 28.956 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 192.532 30.734 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 192.532 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 192.532 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "346edd46-6836-4bd6-82a7-e13eeb0c00e3")
+		)
+		(pin "2"
+			(uuid "cde3a176-24d4-41db-a0ec-12e9ac182e11")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 36.83 40.64 0)
+		(at 53.848 38.862 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7097,7 +7025,7 @@
 		(dnp no)
 		(uuid "8f6c7c83-1676-4ddb-943f-23ed06507eec")
 		(property "Reference" "#PWR04"
-			(at 36.83 46.99 0)
+			(at 53.848 45.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7106,7 +7034,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 44.45 0)
+			(at 53.848 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7114,7 +7042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 40.64 0)
+			(at 53.848 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7123,7 +7051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 40.64 0)
+			(at 53.848 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7132,7 +7060,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 40.64 0)
+			(at 53.848 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,24 +7081,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_SPDT")
-		(at 87.63 38.1 0)
+		(lib_id "Device:LED")
+		(at 48.514 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "94208a50-f76a-4f98-86de-7773b60bc135")
-		(property "Reference" "K5"
-			(at 98.806 38.1 90)
+		(fields_autoplaced yes)
+		(uuid "922ad6a4-5cca-4b90-898b-eacefc7e07f4")
+		(property "Reference" "D5"
+			(at 50.1015 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Relay_SPDT"
-			(at 100.33 38.1 90)
+		(property "Value" "LED"
+			(at 50.1015 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,7 +7107,74 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 39.37 0)
+			(at 48.514 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.514 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 48.514 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1878e70a-8345-44d5-8dbc-49dc3153f3e5")
+		)
+		(pin "1"
+			(uuid "ae63e267-0cf1-4154-a5ea-f93394bd898d")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:Relay_SPDT")
+		(at 104.648 36.322 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94208a50-f76a-4f98-86de-7773b60bc135")
+		(property "Reference" "K5"
+			(at 115.824 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Relay_SPDT"
+			(at 117.348 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay:RELAY_PR13-5V-450-1C"
+			(at 116.078 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7188,7 +7184,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 38.1 0)
+			(at 104.648 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7197,7 +7193,7 @@
 			)
 		)
 		(property "Description" "Monostable Relay SPDT, EN50005"
-			(at 87.63 38.1 0)
+			(at 104.648 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,41 +7226,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 33.02 82.55 90)
+		(lib_id "Relay:Relay_SPDT")
+		(at 258.064 36.576 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "99082fee-a5de-47f1-8de5-aa908581e9a9")
-		(property "Reference" "R6"
-			(at 33.02 80.518 90)
+		(uuid "95699fef-3cf0-4e23-8a85-b79d93de910e")
+		(property "Reference" "K1"
+			(at 269.24 36.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "220"
-			(at 32.766 82.55 90)
+		(property "Value" "Relay_SPDT"
+			(at 270.764 36.576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 84.328 90)
+		(property "Footprint" "Relay:RELAY_PR13-5V-450-1C"
+			(at 269.494 37.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 82.55 0)
+			(at 258.064 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7272,8 +7269,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 33.02 82.55 0)
+		(property "Description" "Monostable Relay SPDT, EN50005"
+			(at 258.064 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7281,16 +7278,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "ff5248a0-b7ad-4f78-848f-bc2e8523b0b7")
+		(pin "A1"
+			(uuid "dc332da2-0e22-44e5-8836-d60c12a7820c")
 		)
-		(pin "2"
-			(uuid "06cd1199-8eec-40f3-9656-30d46841548b")
+		(pin "14"
+			(uuid "95d97c8e-6856-44d3-a9b5-e6f14bb684d4")
+		)
+		(pin "A2"
+			(uuid "a81c28bf-3462-415c-9f4e-ab4795018931")
+		)
+		(pin "11"
+			(uuid "cfc93cd7-d7ed-424d-95f3-7d18de92ddfc")
+		)
+		(pin "12"
+			(uuid "49ca8efa-8e15-4e85-b4be-dc2d685d2782")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R6")
+					(reference "K1")
 					(unit 1)
 				)
 			)
@@ -7298,15 +7304,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 133.35 53.34 180)
+		(at 214.884 51.816 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9c25e1ec-d2f1-498c-9100-78f505247a5e")
+		(uuid "99511972-9e15-4f8f-bf73-024b8c8ba892")
 		(property "Reference" "J2"
-			(at 133.35 48.006 0)
+			(at 214.884 46.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7314,7 +7320,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x03"
-			(at 133.604 58.928 0)
+			(at 215.138 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7322,7 +7328,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
-			(at 133.35 53.34 0)
+			(at 214.884 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7331,7 +7337,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.35 53.34 0)
+			(at 214.884 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7340,7 +7346,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 133.35 53.34 0)
+			(at 214.884 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7349,13 +7355,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "affe8869-0a35-4662-a9bf-b1ea647eb5f2")
+			(uuid "2e2ef59a-6c4d-4a8d-9877-bc5364aac78f")
 		)
 		(pin "3"
-			(uuid "f6a4e11d-8858-4079-8cba-f444111873f6")
+			(uuid "4e3c1739-110a-428b-9d1a-71698a7bd150")
 		)
 		(pin "2"
-			(uuid "02aaf723-bb4d-4763-a061-54894ce443e8")
+			(uuid "ad3a78bb-d8bd-4274-a3bd-d821e3fdca6b")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
@@ -7367,85 +7373,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 27.94 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2490117-bd13-4e31-9eb7-611b7b9d37db")
-		(property "Reference" "R5"
-			(at 24.13 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330"
-			(at 27.94 95.758 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.162 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 27.94 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 27.94 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9cfb14dc-75a4-4f5d-aa86-355b4779f667")
-		)
-		(pin "2"
-			(uuid "19d14c23-7e29-469c-8e87-51da3d9620bf")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 44.45 105.41 180)
+		(at 214.884 102.616 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a3c0786b-40f0-49bc-b737-f07271180e8f")
-		(property "Reference" "J3"
-			(at 44.45 100.076 0)
+		(uuid "9d1069fe-4419-4950-98b1-f893499c8e03")
+		(property "Reference" "J4"
+			(at 214.884 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7453,7 +7390,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x03"
-			(at 44.704 110.998 0)
+			(at 215.138 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7461,7 +7398,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-3_P5.08mm"
-			(at 44.45 105.41 0)
+			(at 214.884 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7470,7 +7407,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 44.45 105.41 0)
+			(at 214.884 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7479,7 +7416,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 44.45 105.41 0)
+			(at 214.884 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7488,42 +7425,229 @@
 			)
 		)
 		(pin "1"
-			(uuid "556258f0-e86a-45d4-ae0d-7a218063f412")
+			(uuid "491de9fe-8cf2-481a-8f15-10c998506559")
 		)
 		(pin "3"
-			(uuid "4dd55909-62b2-4dd4-be9c-1d1d969868c4")
+			(uuid "16e1c7a4-64ff-48a9-8b57-7b59a00ee0fc")
 		)
 		(pin "2"
-			(uuid "8362d016-54cf-47de-91d2-43a14bcad9d4")
+			(uuid "b3253476-2780-4bbf-bc79-76ed74c3c4bd")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "J3")
+					(reference "J4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 240.03 44.45 180)
+		(lib_id "PC817-B:PC817-B")
+		(at 219.964 84.836 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a43b1b20-3781-4157-887b-5c56fd0ee26e")
-		(property "Reference" "10K4"
-			(at 240.03 44.196 90)
+		(uuid "9e95e29b-0da0-43d4-a935-c5b1ffa9d2cf")
+		(property "Reference" "Q7"
+			(at 215.138 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 237.744 44.196 0)
+		(property "Value" "PC817-B"
+			(at 226.568 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "American Bright"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "DIP-4 American Bright"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "N/A"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "PC817-B"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "SHARP"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "METADATA" "IPC-7351B"
+			(at 219.964 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1d00e97-f4af-4221-9cfb-3a3dd78ce931")
+		)
+		(pin "3"
+			(uuid "9ff01856-6461-408d-a003-ff6fceae82f0")
+		)
+		(pin "4"
+			(uuid "0cfec01d-5986-4839-828a-dff4a2a1eaf5")
+		)
+		(pin "2"
+			(uuid "36ff738d-7139-4ff3-80dd-a726423fb575")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.202 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ac8b0142-f2f5-4972-ab0a-3e0098918238")
+		(property "Reference" "#PWR07"
+			(at 92.202 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 94.488 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +7655,72 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.808 44.45 90)
+			(at 92.202 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.202 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.202 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aab78872-05e7-4d83-8325-dfb2e213f713")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 201.676 79.756 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3ba02d8-799d-4044-9a7b-e8255ab1f291")
+		(property "Reference" "D7"
+			(at 203.2635 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 203.2635 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.676 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7540,7 +7729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 44.45 0)
+			(at 201.676 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7548,8 +7737,76 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 240.03 44.45 0)
+		(property "Description" "Light emitting diode"
+			(at 201.676 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f813661-7631-43ff-bca2-9e7463a57d94")
+		)
+		(pin "1"
+			(uuid "ff85c9fd-95b4-4c18-82c9-f8cb0c05e95f")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.102 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b71f1188-7fa8-43ae-83bf-d290255a75db")
+		(property "Reference" "#PWR05"
+			(at 54.102 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.102 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.102 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.102 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.102 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7558,10 +7815,74 @@
 			)
 		)
 		(pin "1"
-			(uuid "2313572b-f755-42e8-b0b2-37b373465ab6")
+			(uuid "889983a3-e1b0-4646-8a72-a5f3050f8acd")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 232.664 93.726 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b72a6ed6-01c2-4ea2-92ca-10f30ffcd95c")
+		(property "Reference" "10K4"
+			(at 232.664 93.472 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 230.378 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.442 93.726 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.664 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 232.664 93.726 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea6e6c54-35e3-40e1-89f1-a89c16445c0a")
 		)
 		(pin "2"
-			(uuid "5897f958-d61b-4eda-bc1a-5e8deed2b7cf")
+			(uuid "b984e039-ac81-48db-a722-b0dccdf6de05")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
@@ -7573,399 +7894,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 151.13 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5c3a88a-b0bc-46bb-ae07-1d3729881d9d")
-		(property "Reference" "10K3"
-			(at 151.13 44.196 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 148.844 44.196 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.908 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 151.13 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9fe03c8-e8b1-4fce-a87a-4b231caf2c87")
-		)
-		(pin "2"
-			(uuid "9acaa3a5-a0e6-49bf-8332-ff519c70abda")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "10K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a87c3c7f-45b8-48cb-a550-f4138074291b")
-		(property "Reference" "#PWR02"
-			(at 125.73 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 125.73 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6927cf11-a6e9-4144-bf77-6324b5514f61")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 205.74 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a9ea544d-874a-4690-8748-c8722c0414c3")
-		(property "Reference" "#PWR010"
-			(at 205.74 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 207.01 50.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a347b20a-4a25-4bb9-a46c-0ecf47b230f7")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PC817-B:PC817-B")
-		(at 49.53 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aade7398-38f6-4f1a-a48c-ce5f3b51a5c0")
-		(property "Reference" "Q4"
-			(at 44.704 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "PC817-B"
-			(at 56.134 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "American Bright"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "DIP-4 American Bright"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "N/A"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "PC817-B"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "SHARP"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "METADATA" "IPC-7351B"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f6f640b3-74fa-48ac-b995-d3ebf685ba6c")
-		)
-		(pin "3"
-			(uuid "ef224d5c-e1bf-43e9-a77a-da33933cd1d1")
-		)
-		(pin "4"
-			(uuid "42b07112-c637-4610-a885-a6c1b718e062")
-		)
-		(pin "2"
-			(uuid "d74a9ad8-8ca0-4a26-9e11-cc050285e0dd")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Relay:Relay_SPDT")
-		(at 87.63 90.17 0)
+		(at 104.902 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b04f84dd-d63d-4b64-a4d7-61f6b4a15902")
+		(uuid "ba155b27-0adf-4107-9b88-8d69abebc87f")
 		(property "Reference" "K2"
-			(at 98.806 90.17 90)
+			(at 116.078 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7973,15 +7911,15 @@
 			)
 		)
 		(property "Value" "Relay_SPDT"
-			(at 100.33 90.17 90)
+			(at 117.602 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 99.06 91.44 0)
+		(property "Footprint" "Relay:RELAY_PR13-5V-450-1C"
+			(at 116.332 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,7 +7929,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 90.17 0)
+			(at 104.902 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8000,7 +7938,7 @@
 			)
 		)
 		(property "Description" "Monostable Relay SPDT, EN50005"
-			(at 87.63 90.17 0)
+			(at 104.902 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8009,19 +7947,19 @@
 			)
 		)
 		(pin "A1"
-			(uuid "a18a6d1d-38fa-41ac-b458-eac2adaeed22")
+			(uuid "31a9ec3d-512d-4b75-a1d8-94f03ab48549")
 		)
 		(pin "14"
-			(uuid "20c7ae98-0b9b-436d-b4cb-331789f7051a")
+			(uuid "6c699e0b-e07f-486a-9b6e-a5a2949e5c49")
 		)
 		(pin "A2"
-			(uuid "d78a49ac-029e-49b4-8422-492137d6be86")
+			(uuid "74866433-a52a-43ee-b695-2b0f3537f539")
 		)
 		(pin "11"
-			(uuid "f97ce7b7-987a-4634-96db-a91b24b02100")
+			(uuid "cc98eb69-42d5-4dbe-a9c5-e56c54bb4b62")
 		)
 		(pin "12"
-			(uuid "7ba9aff8-fd37-4b35-9302-90873a0ce956")
+			(uuid "97da68cb-0160-45f6-863f-f863b72b0d75")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
@@ -8034,72 +7972,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b2ce4a86-1932-47d4-903a-afa83495d311")
-		(property "Reference" "#PWR06"
-			(at 27.94 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 102.415 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "753cc985-0ca3-4778-8ff9-e5ebcf00f6da")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 74.93 55.88 0)
+		(at 91.948 54.102 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8107,7 +7980,7 @@
 		(dnp no)
 		(uuid "bdff1bcf-5f94-4837-80dc-44c300674223")
 		(property "Reference" "#PWR014"
-			(at 74.93 62.23 0)
+			(at 91.948 60.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8116,7 +7989,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.216 58.928 0)
+			(at 94.234 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8124,7 +7997,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 55.88 0)
+			(at 91.948 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8133,7 +8006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 55.88 0)
+			(at 91.948 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8142,7 +8015,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 55.88 0)
+			(at 91.948 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8163,35 +8036,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 27.94 86.36 90)
+		(lib_id "power:VCC")
+		(at 236.474 77.216 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c26b52a0-652e-4800-94e6-e9388604ad75")
-		(property "Reference" "D5"
-			(at 30.988 86.6774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 30.988 89.2174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 86.36 0)
+		(uuid "c4e869df-e177-43db-989d-31e03a7ea7da")
+		(property "Reference" "#PWR09"
+			(at 236.474 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8199,129 +8053,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 27.94 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 27.94 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d1b12ec9-f3d9-40e3-a192-21658a079918")
-		)
-		(pin "1"
-			(uuid "387bcc78-b40a-4b1e-b78a-9a5166c603ba")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 205.74 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c89a1b4d-b669-4663-8578-fee85491a1ea")
-		(property "Reference" "D7"
-			(at 208.788 34.6074 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 208.788 37.1474 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 205.74 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d652ad42-071f-4acd-a8de-5b395a83872c")
-		)
-		(pin "1"
-			(uuid "bca1c33f-280b-4d46-bc09-91092edbfb3e")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L7805")
-		(at 60.96 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc21e13e-6122-460f-845d-4f342856b248")
-		(property "Reference" "U1"
-			(at 60.96 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L7805"
-			(at 60.96 129.54 0)
+		(property "Value" "VCC"
+			(at 236.474 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8329,224 +8062,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 61.595 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-			(at 60.96 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-			(at 60.96 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d39ec72-d5a2-407b-86e2-e9ce4f7540cb")
-		)
-		(pin "3"
-			(uuid "8ce98bda-178a-4a2a-9eac-4ae3956fd3f6")
-		)
-		(pin "2"
-			(uuid "3c2b79ad-9ac2-4ed4-9bf6-105a9eb7628c")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 121.92 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d59858f7-a756-4e31-b5d6-d92b21138c19")
-		(property "Reference" "R4"
-			(at 121.92 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 121.666 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 32.258 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 121.92 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58cc2b31-2abb-4416-b9b2-c783a3f54e5f")
-		)
-		(pin "2"
-			(uuid "d8edc592-8152-4826-8576-848690e8b1b7")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:Relay_SPDT")
-		(at 265.43 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d76f256e-6cd2-4519-852d-757dbcea7347")
-		(property "Reference" "K3"
-			(at 276.606 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Relay_SPDT"
-			(at 278.13 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Monostable Relay SPDT, EN50005"
-			(at 265.43 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "A1"
-			(uuid "0ce779f2-44fc-4c59-9e46-2502016df64d")
-		)
-		(pin "14"
-			(uuid "2af073a6-8379-4f49-bf03-85a9e1435ab3")
-		)
-		(pin "A2"
-			(uuid "ada4f533-75cd-4a6c-bbdb-3c3bd075fc6c")
-		)
-		(pin "11"
-			(uuid "63bdcce4-5aae-472b-af22-3131d3127b80")
-		)
-		(pin "12"
-			(uuid "ff1200f6-b563-470c-bd7c-314409b5dbd4")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 36.83 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9c3893d-924a-40cf-909c-6de3e386030c")
-		(property "Reference" "#PWR07"
-			(at 36.83 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 36.83 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 92.71 0)
+			(at 236.474 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8555,7 +8071,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 92.71 0)
+			(at 236.474 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8563,8 +8079,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 92.71 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 236.474 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8573,12 +8089,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "323abeaf-82a7-4909-8132-9dabd203a6a9")
+			(uuid "4d7b2c91-9b69-41d1-9fc6-a63a280fafa0")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR07")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8586,178 +8102,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 252.73 38.1 270)
+		(at 245.364 36.576 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "db9fcb2c-5c57-4454-937e-adfe71479d8e")
-		(property "Reference" "D8"
-			(at 251.46 34.036 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D"
-			(at 251.46 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 252.73 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 252.73 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 252.73 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 252.73 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2cc76d52-4df0-4cca-be5b-3e69559a34c9")
-		)
-		(pin "1"
-			(uuid "07e54840-de12-4a49-a965-bb54ee7658d2")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EESTN5:BC547")
-		(at 72.39 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e533d3e7-daa1-456c-a811-5306540e07b0")
-		(property "Reference" "Q6"
-			(at 77.47 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC547"
-			(at 77.47 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EESTN5:TO-92"
-			(at 77.47 104.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
-			(at 72.39 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
-			(at 72.39 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb00af72-6ff8-40d9-a77c-7e14ab4208a2")
-		)
-		(pin "3"
-			(uuid "84263434-f771-481e-806c-40225d4bf506")
-		)
-		(pin "2"
-			(uuid "fde58634-d803-454d-b735-6acfc2f4a2e4")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 163.83 38.1 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ec8e24d4-e994-430a-883b-53af45fae781")
+		(uuid "cac0ccfa-3d72-40b7-8c12-3624545b961d")
 		(property "Reference" "D3"
-			(at 162.56 34.036 0)
+			(at 244.094 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,7 +8119,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 162.56 39.624 0)
+			(at 244.094 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8775,7 +8128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 38.1 0)
+			(at 245.364 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8784,7 +8137,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 38.1 0)
+			(at 245.364 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8793,7 +8146,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 163.83 38.1 0)
+			(at 245.364 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8802,7 +8155,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 163.83 38.1 0)
+			(at 245.364 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8811,7 +8164,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 163.83 38.1 0)
+			(at 245.364 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8820,10 +8173,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "f085819d-73be-4b6c-a04c-b59092b8da9f")
+			(uuid "9ca1369e-8a21-4ae3-a087-c049a02cdfb7")
 		)
 		(pin "1"
-			(uuid "33c47233-f61b-4469-9340-1b6894b99c53")
+			(uuid "8c220126-094f-4271-a995-2dc2fdf09127")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
@@ -8835,51 +8188,56 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 163.83 55.88 0)
+		(lib_id "EESTN5:BC547")
+		(at 242.824 100.076 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ed82e32c-4a5d-4b8c-af76-57e1a1db6743")
-		(property "Reference" "#PWR05"
-			(at 163.83 62.23 0)
+		(fields_autoplaced yes)
+		(uuid "cbb61d21-710d-4658-8dc4-8f352a876d78")
+		(property "Reference" "Q8"
+			(at 247.904 98.8059 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 247.904 101.3459 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EESTN5:TO-92"
+			(at 247.904 101.981 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 166.116 58.928 0)
+		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
+			(at 242.824 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 163.83 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 55.88 0)
+		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
+			(at 242.824 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8888,12 +8246,225 @@
 			)
 		)
 		(pin "1"
-			(uuid "4217fa8c-c141-47b9-ab62-fdb1f3f2233e")
+			(uuid "b6befb45-cddb-4269-a9cc-e476772494fc")
+		)
+		(pin "3"
+			(uuid "b14e74e4-c42b-4c69-af75-b66c31d40252")
+		)
+		(pin "2"
+			(uuid "d2911ddf-01d1-4c6c-8508-d77bb92d832b")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "#PWR05")
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EESTN5:BC547")
+		(at 89.662 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc8fbeb2-376a-4ab9-8869-ef3a4a506f61")
+		(property "Reference" "Q6"
+			(at 94.742 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 94.742 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EESTN5:TO-92"
+			(at 94.742 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
+			(at 89.662 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
+			(at 89.662 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23091e86-03d4-474b-8f1a-dfbd4cbb1584")
+		)
+		(pin "3"
+			(uuid "4df43b9e-0ae8-42e1-a9a8-e869f9deeeee")
+		)
+		(pin "2"
+			(uuid "ba9afddb-3f56-403a-b21c-d215dfa1d784")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.364 105.156 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdb7284b-b3d6-4c8e-972a-ff7376d87d01")
+		(property "Reference" "#PWR010"
+			(at 245.364 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 247.65 108.204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.364 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.364 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.364 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6f46789-2f29-46a8-84f0-d85f683cb9e2")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.698 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1f86158-0fce-433d-a1b8-4b6f7a07ead2")
+		(property "Reference" "#PWR022"
+			(at 123.698 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.698 162.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.698 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.698 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.698 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cea37049-06b6-49c3-be94-9268498b4d95")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8901,15 +8472,15 @@
 	)
 	(symbol
 		(lib_id "PC817-B:PC817-B")
-		(at 227.33 35.56 0)
+		(at 219.964 34.036 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f027ec9a-87ea-441b-8eea-d3e4241c6a3d")
-		(property "Reference" "Q7"
-			(at 222.504 44.45 0)
+		(uuid "d2dbf99d-55ce-4ac3-a5f3-fb980dc06590")
+		(property "Reference" "Q2"
+			(at 215.138 42.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8918,7 +8489,7 @@
 			)
 		)
 		(property "Value" "PC817-B"
-			(at 233.934 44.45 0)
+			(at 226.568 42.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8927,7 +8498,7 @@
 			)
 		)
 		(property "Footprint" "Optocoplador:SOT254P1025X400-4N"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8937,7 +8508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8946,7 +8517,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8955,7 +8526,7 @@
 			)
 		)
 		(property "MF" "American Bright"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8965,7 +8536,7 @@
 			)
 		)
 		(property "Description_1" "\n                        \n                            Phototransistors   4-DIP (0.300, 7.62mm)\n                        \n"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8975,7 +8546,7 @@
 			)
 		)
 		(property "Package" "DIP-4 American Bright"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8985,7 +8556,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8995,7 +8566,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=eda"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9005,7 +8576,7 @@
 			)
 		)
 		(property "PARTREV" "N/A"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9015,7 +8586,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PC817-B/American+Bright/view-part/?ref=snap"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9025,7 +8596,7 @@
 			)
 		)
 		(property "MP" "PC817-B"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9035,7 +8606,7 @@
 			)
 		)
 		(property "MANUFACTURER" "SHARP"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9045,7 +8616,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9055,7 +8626,7 @@
 			)
 		)
 		(property "METADATA" "IPC-7351B"
-			(at 227.33 35.56 0)
+			(at 219.964 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9065,91 +8636,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "ea224dcb-d3cf-45bc-bf1d-517991fc8d04")
+			(uuid "4cf07af5-29d5-44ec-99c7-0f12ad859e45")
 		)
 		(pin "3"
-			(uuid "b991e2f9-ba82-4f06-b07f-b7cd41fb016d")
+			(uuid "e8fca0da-43f1-43e7-9f92-8b1910dba0b1")
 		)
 		(pin "4"
-			(uuid "b1dbea0f-1e34-4739-a812-36dee881ca9a")
+			(uuid "8c506690-f93e-43df-a663-73c44ceddcda")
 		)
 		(pin "2"
-			(uuid "7ad703fa-8d58-401e-a1b3-db26f10a0edf")
+			(uuid "82f5c4b3-9354-4837-a577-0dff125e5996")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 116.84 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f04d9bf1-ed4d-44e8-b953-fe37e96dbf6c")
-		(property "Reference" "D2"
-			(at 119.888 34.6074 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 119.888 37.1474 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 116.84 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9479a473-5620-4fb7-bab0-016a88b6b445")
-		)
-		(pin "1"
-			(uuid "b846a4ca-0f98-46e9-8403-3941e9b027cd")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "D2")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -9157,84 +8658,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 205.74 41.91 0)
+		(at 39.37 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f12e871a-7d04-476a-8333-98b1b58cbd73")
-		(property "Reference" "R7"
-			(at 201.93 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330"
-			(at 205.74 43.688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.962 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0b26f87-149c-4c2e-b126-c09b7ca7d141")
-		)
-		(pin "2"
-			(uuid "228eafe9-3e7c-49de-ace2-103a67e7e9ac")
-		)
-		(instances
-			(project "Rele-wifi De Caro"
-				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 210.82 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f84e9059-2d8a-4859-8f96-31b045c734c4")
-		(property "Reference" "R8"
-			(at 210.82 28.448 90)
+		(uuid "d4f73522-dee2-40cd-b915-37ce7211db71")
+		(property "Reference" "R3"
+			(at 39.37 77.978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9242,7 +8674,7 @@
 			)
 		)
 		(property "Value" "220"
-			(at 210.566 30.48 90)
+			(at 39.116 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9250,7 +8682,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 32.258 90)
+			(at 39.37 81.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9259,7 +8691,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 30.48 0)
+			(at 39.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9268,7 +8700,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 210.82 30.48 0)
+			(at 39.37 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9277,15 +8709,286 @@
 			)
 		)
 		(pin "1"
-			(uuid "01abf3f6-056a-43ff-8696-e5f60bc912b8")
+			(uuid "9c1e57ea-32ff-41e2-bd82-5ac2c5d740f0")
 		)
 		(pin "2"
-			(uuid "22db5d86-ab2e-48ae-bfa5-3d8a473430c9")
+			(uuid "f1a8bba0-111e-46ff-979e-89e41fa6cc83")
 		)
 		(instances
 			(project "Rele-wifi De Caro"
 				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
-					(reference "R8")
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 49.276 138.938 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9e6df81-4eef-41ff-a743-295361b8e847")
+		(property "Reference" "#PWR020"
+			(at 49.276 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 49.276 135.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.276 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.276 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 49.276 138.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e64c5d7-eaeb-4f6f-96fd-45f886ec1d14")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.364 54.356 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e039e6c1-3f26-4f15-a330-fdb71b59132e")
+		(property "Reference" "#PWR03"
+			(at 245.364 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 247.65 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.364 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.364 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.364 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c4c1f9a-abea-42ff-80eb-983bb533242c")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 207.264 39.116 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3efc187-94f4-4ff6-b94d-76243ff71489")
+		(property "Reference" "#PWR01"
+			(at 207.264 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.264 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.264 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.264 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 207.264 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2e59755-0b2f-486f-9291-f1b0db4fc9d1")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EESTN5:BC547")
+		(at 242.824 49.276 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffb00f41-9600-4ca5-9896-8254a9f6a2d7")
+		(property "Reference" "Q3"
+			(at 247.904 48.0059 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC547"
+			(at 247.904 50.5459 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EESTN5:TO-92"
+			(at 247.904 51.181 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.fairchildsemi.com/ds/BC/BC547.pdf"
+			(at 242.824 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92"
+			(at 242.824 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd9c4524-32f9-40c9-90d4-7d40ce8004c0")
+		)
+		(pin "3"
+			(uuid "cf0622a3-133a-4e22-a634-5ca03473d200")
+		)
+		(pin "2"
+			(uuid "43766f4e-3912-47cb-aa19-ac955b5938bc")
+		)
+		(instances
+			(project "Rele-wifi De Caro"
+				(path "/34db5880-8dbc-44af-8b9d-0e411cb8dd80"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
